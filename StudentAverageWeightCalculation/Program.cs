@@ -8,6 +8,9 @@ char gender = Convert.ToChar(Console.ReadLine());
 
 if (gender == 'e' || gender == 'E')
 {
+    #region ERKEK-ÖĞRENCİ-VE-TEKRAR-GİRİŞ-YAPILSIN-MI-YAPILMAYACAKSA-SONUC-GÖSTER
+
+    
     Console.WriteLine("ERKEK ÖĞRENCİNİN KİLO BİLGİSİNİ GİRİNİZ");
     boymassanswer = Convert.ToInt32(Console.ReadLine());
     boymasscounter = boymasscounter + boymassanswer;
@@ -37,9 +40,13 @@ if (gender == 'e' || gender == 'E')
         }
 
     }
+    #endregion
 }
 else if (gender == 'k' || gender == 'K')
 {
+    #region KIZ-ÖĞRENCİ-VE-TEKRAR-GİRİŞ-YAPILSIN-MI-YAPILMAYACAKSA-SONUC-GÖSTER
+
+   
     Console.WriteLine("KIZ ÖĞRENCİNİN KİLO BİLGİSİNİ GİRİNİZ");
     girlmassanswer = Convert.ToInt32(Console.ReadLine());
     girlmasscounter = girlmasscounter + girlmassanswer;
@@ -69,7 +76,7 @@ else if (gender == 'k' || gender == 'K')
             Console.WriteLine("KIZ ÖĞRENCİ SAYISI:" + girlstudentcounter + "KIZ KİLO ORTALAMA:" + girlaverage);
 
         }
-
+        #endregion
     }
 
 }
